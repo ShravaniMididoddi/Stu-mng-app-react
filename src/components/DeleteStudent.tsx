@@ -19,7 +19,7 @@ export default function DeleteStudent() {
       .delete("http://localhost:9090/stu/mng/del?rollNo=" + rollNo)
       .then((res) => {
         console.log("res data--->" + res.data);
-        delNav("/");
+        delNav("/showAll");
       });
   };
 
